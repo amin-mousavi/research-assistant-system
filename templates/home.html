@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+  <br/>
+  <div class="jumbotron" style="direction:rtl; text-align:right;">
+    <h1 class="display-4">سامانه پژوهشیار</h1>
+    <p class="lead">یک سامانه برای بررسی  مقالات و طرح های پژوهشی</p>
+    <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}"
+    role="button">دیدن همه مقالات</a>
+    </p>
+  </div>
+{% endblock content %}

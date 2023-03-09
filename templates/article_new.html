@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="direction:rtl; text-align:right;">
+        <h1>مقاله جدید</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+        <button class="btn btn-success ml-2" type="submit">ارسال</button>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div style="direction:rtl; text-align:right;">
+        <h1>حذف</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>آیا از حذف مقاله "{{ article.title }}" اطمینان دارید؟</p>
+            <button class="btn btn-danger ml-2" type="submit">تایید</button>
+        </form>
+    </div>
+
+{% endblock content %}
